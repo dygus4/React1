@@ -1,9 +1,9 @@
 //import {pageContents, listData} from '../../data/dataStore';
 import React from 'react';
 import styles from './Home.scss';
-import List from '../List/ListContainer.js';
+import ListLink from '../ListLink/listLink.js';
 import PropTypes from 'prop-types';
-import Search from '../Search/SearchContainer.js';
+//import Search from '../Search/SearchContainer.js';
 
 class Home extends React.Component {
   static propTypes = {
@@ -17,9 +17,9 @@ class Home extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search />
+        
         {lists.map(listData => (
-          <List key={listData.id} {...listData} />
+          <ListLink key={listData.id} {...listData} />
         ))}
       </main>
     );
