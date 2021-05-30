@@ -1,7 +1,7 @@
 //import {pageContents, listData} from '../../data/dataStore';
 import React from 'react';
 import styles from './Home.scss';
-import ListLink from '../ListLink/listLink.js';
+import ListLink from '../ListLink/ListLink.js';
 import PropTypes from 'prop-types';
 //import Search from '../Search/SearchContainer.js';
 
